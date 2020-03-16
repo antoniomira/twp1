@@ -1,9 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
 
 @Component({
-  selector: 'app-curriculum',
-  templateUrl: './curriculum.component.html',
-  styleUrls: ['./curriculum.component.css']
+  selector: "app-curriculum",
+  templateUrl: "./curriculum.component.html",
+  styleUrls: ["./curriculum.component.css"]
 })
 export class CurriculumComponent implements OnInit {
 

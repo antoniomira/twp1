@@ -1,22 +1,24 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes, ExtraOptions} from '@angular/router';
+import { NgModule } from "@angular/core";
+import { RouterModule, Routes, ExtraOptions } from "@angular/router";
 
 // Importar los componentes a los que se quiere navegar.
-import { IndexComponent } from '../app/components/index/index.component';
-import { CurriculumComponent} from '../app/components/curriculum/curriculum.component';
+import { IndexComponent } from "../app/components/index/index.component";
+import { CurriculumComponent } from "../app/components/curriculum/curriculum.component";
+import { SocialComponent } from "./components/social/social.component";
 
 const routerOptions: ExtraOptions = {
-  anchorScrolling: 'enabled'
+	anchorScrolling: "enabled"
 };
 
 const routes: Routes = [
-  //{ path: 'heroes', component: HeroesComponent }
-  { path: '', component: IndexComponent },
-  { path: 'curriculum', component: CurriculumComponent }
+	//{ path: 'heroes', component: HeroesComponent }
+	{ path: "", component: IndexComponent },
+	{ path: "curriculum", component: CurriculumComponent },
+	{ path: "social", component: SocialComponent }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, routerOptions)],
-  exports:[RouterModule]
+	imports: [RouterModule.forRoot(routes, routerOptions)],
+	exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
