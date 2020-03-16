@@ -3,10 +3,12 @@ import { RouterModule, Routes } from '@angular/router';
 
 // Importar los componentes a los que se quiere navegar.
 import { IndexComponent } from "../app/components/index/index.component";
+import { CurriculumComponent} from "../app/components/curriculum/curriculum.component"
 
 const routes: Routes = [
   //{ path: 'heroes', component: HeroesComponent }
-  { path: '', component: IndexComponent }
+  { path: '', component: IndexComponent },
+  { path: 'curriculum', component: CurriculumComponent }
 ];
 
 @NgModule({
